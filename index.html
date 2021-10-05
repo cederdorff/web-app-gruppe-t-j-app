@@ -1,0 +1,951 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tait</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Product Single Page Application">
+  <meta name="author" content="Simone, Sofie og Maria">
+  <link rel="shortcut icon" type="image/png" href="\images\logoOgIkoner\shuffle_menuIkon.png" />
+  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/guide.css">
+  <link rel="stylesheet" href="css/profil.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body onhashchange="pageChange()">
+  <!-- tabbar navigation -->
+  <div class="header" id="header">
+
+    <a href="#forside" id="nav-link" rel="forside"><img src="images/logoOgIkoner/tait_blue.svg.png" alt="logo"
+        class="logo"></a>
+    <div class="navigation_container">
+      <label for="mobileicon" id="nav-link" class="mobileiconlabel"><img src="images/logoOgIkoner/profil_menuIkon.png"
+          alt="profil" class="profil"></label>
+      <input type="checkbox" id="mobileicon" class="mobileicon">
+
+      <div class="menuitems__container">
+        <a href="#skab" rel="skab" id="nav-link" class="menuitem" onclick="closeMenu()">Gå til Klædeskab</a>
+        <a href="#retProfil" rel="rediger" id="nav-link" class="menuitem">Ret oplysninger</a>
+        <a href="#omos" rel="omos" id="nav-link" class="menuitem">Om Tait</a>
+        <a href="#startGuide1" rel="logud" id="nav-link" class="menuitem">Log ud</a>
+      </div>
+    </div>
+  </div>
+  <nav class="tabbar">
+    <a href="#inspiration" id="nav-link"><img src="images/logoOgIkoner/inspi_menuIkon.png" alt="inspiration"
+        class="nav_ikon"></a>
+    <a href="#gemt" id="nav-link"><img src="images/logoOgIkoner/heart_menuIkon.png" alt="gemt" class="nav_ikon"></a>
+    <a href="#shuffle" id="nav-link"><img src="images/logoOgIkoner/shuffle_menuIkon.png" alt="shuffle"
+        class="nav_ikon_shuffle"></a>
+    <a href="#skab" id="nav-link"><img src="images/logoOgIkoner/skab_menuIkon.png" alt="skab" class="nav_ikon"></a>
+    <a href="#add" id="nav-link"><img src="images/logoOgIkoner/add_manuIkon.png" alt="add" class="nav_ikon"></a>
+  </nav>
+
+  <!-- All pages -->
+
+  <!-- Start guide page -->
+  <section id="startGuide1" class="page">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <h3 class="guide_header">Kan du også blive helt stresset<br>over at skulle finde tøj hver dag?<br>Tait er appen til
+      dig der har brug for hjælp<br>til at gøre hverdagen lidt nemmere.</h3>
+    <div class="start_guide_boks">
+      <img src="images/logoOgIkoner/add_manuIkon.png" alt="add" class="guide_ikon">
+      <p class="p_guide">Du kan tilføje dit eget tøj i appen.</p>
+    </div>
+    <a href="#startGuide2" rel="komIgang" class="start_guide_knap">Næste</a>
+  </section>
+
+  <section id="startGuide2" class="page">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <div class="start_guide_boks">
+      <img src="images/logoOgIkoner/skab_menuIkon.png" alt="skab" class="guide_ikon">
+      <p class="p_guide">I "Mit klædeskab" finder du alt det tøj du har oprettet.</p>
+    </div>
+    <a href="#startGuide3" rel="komIgang" class="start_guide_knap">Næste</a>
+  </section>
+
+  <section id="startGuide3" class="page">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <div class="start_guide_boks">
+      <img src="images/logoOgIkoner/shufshuf.png" alt="shuffle" class="guide_ikon">
+      <p class="p_guide">Sammensæt de fedeste outfits ved hjælp af shuffle funktionen.</p>
+    </div>
+    <a href="#startGuide4" rel="komIgang" class="start_guide_knap">Næste</a>
+  </section>
+
+  <section id="startGuide4" class="page">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <div class="start_guide_boks">
+      <img src="images/logoOgIkoner/heart_menuIkon.png" alt="heart" class="guide_ikon">
+      <p class="p_guide">Gem dine outfits så du altid kan finde dem igen.</p>
+    </div>
+    <a href="#startGuide5" rel="komIgang" class="start_guide_knap">Næste</a>
+  </section>
+
+  <section id="startGuide5" class="page">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <div class="start_guide_boks">
+      <img src="images/logoOgIkoner/inspi_menuIkon.png" alt="inspi" class="guide_ikon">
+      <p class="p_guide">Find inspiration hos andre brugere og gem de outfits du er vild med.</p>
+    </div>
+    </div>
+    <a href="#loginRegistrer" rel="komIgang" class="start_guide_knap">Kom igang!</a>
+  </section>
+
+  <!-- login/registrer page -->
+  <section id="loginRegistrer" class="page">
+    <div class="baggrund">
+      <h1 class="velkommen_header">Velkommen til</h1>
+      <img src="images/logoOgIkoner/tait_b.png" alt="logo" class="velkommen_logo">
+      <h3 class="velkommen_header2">Log in eller opret dig som bruger og få inspiration, samt lav og gem fede outfits.
+      </h3>
+      <a href="#opret" rel="opret" class="knap">Opret bruger</a>
+      <a href="#login" rel="login" class="knap">Log ind</a>
+    </div>
+  </section>
+
+  <!--"Opret bruger" - siden-->
+  <section class="page" id="opret">
+    <h2 class="opret_header">Opret din profil</h2>
+    <form id="opretId">
+
+      <input type="text" id="brugerNavn" name="brugernavn" class="tekstfelt" placeholder="Brugernavn">
+      <h3 class="valg">Vælg stiltyper</h3>
+      <div class="stilFlex" id="stilTyperCheck">
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style1" class="styleInput"> <img src="images/chic.jpg"
+            class="stiltype_img" alt="Chic">
+          <label for="style1" class="stiltekst">Chic</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style2" class="styleInput"><img src="images/classic.jpg"
+            class="stiltype_img" alt="Klassisk">
+          <label for="style2" class="stiltekst">Klassisk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style3" class="styleInput"><img src="images/casual.jpg"
+            class="stiltype_img" alt="Casual">
+          <label for="style3" class="stiltekst">Casual</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style4" class="styleInput"><img src="images/formal.jpg"
+            class="stiltype_img" alt="Formel">
+          <label for="style4" class="stiltekst">Formel</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style5" class="styleInput"><img src="images/grunge.jpg"
+            class="stiltype_img" alt="Grunge">
+          <label for="style5" class="stiltekst">Grunge</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style6" class="styleInput"><img src="images/streetstyle.jpg"
+            class="stiltype_img" alt="Streetstyle">
+          <label for="style6" class="stiltekst">Streetstyle</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style7" class="styleInput"><img src="images/party.jpg"
+            class="stiltype_img" alt="Party">
+          <label for="style7" class="stiltekst">Party</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style8" class="styleInput"><img src="images/punk.jpg"
+            class="stiltype_img" alt="Punk">
+          <label for="style8" class="stiltekst">Punk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style9" class="styleInput"><img src="images/sporty.jpg"
+            class="stiltype_img" alt="Sporty">
+          <label for="style9" class="stiltekst">Sporty</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style10" class="styleInput"><img src="images/loungewear.jpg"
+            class="stiltype_img" alt="Loungewear">
+          <label for="style10" class="stiltekst">Loungewear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style11" class="styleInput"><img src="images/boho.jpg"
+            class="stiltype_img" alt="Boho">
+          <label for="style11" class="stiltekst">Boho</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style12" class="styleInput"><img src="images/hipster.jpg"
+            class="stiltype_img" alt="Hipster">
+          <label for="style12" class="stiltekst">Hipster</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style13" class="styleInput"><img src="images/workwear.jpg"
+            class="stiltype_img" alt="Workwear">
+          <label for="style13" class="stiltekst">Workwear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style14" class="styleInput"><img src="images/vintage.jpg"
+            class="stiltype_img" alt="Vintage">
+          <label for="style14" class="stiltekst">Vintage</label><br>
+        </div>
+      </div>
+      <input type="text" id="mail" name="tekst" placeholder="E-mail" class="tekstfeltTo"><br>
+      <input type="text" id="kode" name="tekst" placeholder="Kodeord" class="tekstfeltTo"><br>
+      <input type="text" id="GentagKode" name="tekst" placeholder="Gentag kodeord" class="tekstfeltTo"><br>
+      <!--indtast fødselsdag-->
+      <div class="samtykke_felter">
+        <input type="checkbox" name="person" id="persondata" class="check">
+        <label for="persondata" class="lable_tekst">Noget med persondata</label><br>
+        <input type="checkbox" name="samtykke" id="samtykke" class="check">
+        <label for="samtykke" class="lable_tekst">Du giver hermed samtykke til, at dine outfits må vises på Taits
+          inspirationsfeed og
+          Instagram.</label>
+      </div>
+      <a href="#slutGuide" name="submit" rel="opret" class="submit_link">Opret profil</a>
+    </form>
+  </section>
+
+  <!--opret guide slut-->
+  <section class="page" id="slutGuide">
+    <img src="images/logoOgIkoner/tait_blue.svg.png" alt="guide_logo" class="guide_logo">
+    <div class="slutGuideBoks">
+      <img src="images/logoOgIkoner/tjek.png" alt="heart" class="guide_ikon">
+      <p class="p_guide">Tait indeholder allerede en basisgarderobe med de ting de fleste har. Derudover kan du tilføje
+        dine egne unikke ting.</p>
+    </div>
+    <a href="#forside" rel="komIgang" class="forstaaet">Forstået!</a>
+  </section>
+
+  <!--Log in side-->
+  <section class="page" id="login">
+    <h2 class="header_login">Velkommen til</h2>
+    <img src="images/logoOgIkoner/tait_b.png" alt="logo" class="login_logo">
+    <div class="login_div">
+      <input type="text" name="login" placeholder="Indtast brugernavn..." class="login_felter"><br>
+      <input type="text" name="login" placeholder="Indtast kodeord..." class="login_felter"><br>
+      <a href="#forside" class="login_knap">Log ind</a>
+    </div>
+  </section>
+
+  <!-- forside page -->
+  <section id="forside" class="page">
+    <h1 class="forside_header">Hvad er din vibe idag?</h1>
+    <section id="weather_container"></section>
+    <section class="styleBubblesContainer"></section>
+  </section>
+
+  <!-- inspiration page -->
+  <section id="inspiration" class="page">
+    <h1 class="inspirationHeader">Inspiration</h1>
+    <img src="images/logoOgIkoner/inspiration/inspirationTop.png" alt="inspi" class="inspiTopImg">
+    <h2 class="page_headerTo">Mest gemte outfits</h2>
+    <div class="inspiration_div">
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration1.jpg" alt="boho" class="imgGroupOne">
+        <img src="images/logoOgIkoner/inspiration/inspiration10.jpg" alt="boho" class="imgGroupTwo">
+      </div>
+
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration2.jpg" alt="boho" class="imgGroupTwo">
+        <img src="images/logoOgIkoner/inspiration/inspiration3.jpg" alt="boho" class="imgGroupOne">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration4.jpg" alt="boho" class="imgGroupOne">
+        <img src="images/logoOgIkoner/inspiration/inspiration5.jpg" alt="boho" class="imgGroupTwo">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration6.jpg" alt="boho" class="imgGroupTwo">
+        <img src="images/logoOgIkoner/inspiration/inspiration7.jpg" alt="boho" class="imgGroupOne">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration8.jpg" alt="boho" class="imgGroupOne">
+        <img src="images/logoOgIkoner/inspiration/inspiration9.jpg" alt="boho" class="imgGroupTwo">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration2.jpg" alt="boho" class="imgGroupTwo">
+        <img src="images/logoOgIkoner/inspiration/inspiration4.jpg" alt="boho" class="imgGroupOne">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration6.jpg" alt="boho" class="imgGroupOne">
+        <img src="images/logoOgIkoner/inspiration/inspiration8.jpg" alt="boho" class="imgGroupTwo">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- gemte outfits page -->
+  <section id="gemt" class="page">
+    <h2 class="gemt_header">Gemte outfits</h2>
+    <div class="inspiration_div">
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration1.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration10.jpg" alt="boho" class="imgGemt">
+      </div>
+
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration2.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration3.jpg" alt="boho" class="imgGemt">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration4.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration5.jpg" alt="boho" class="imgGemt">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration6.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration7.jpg" alt="boho" class="imgGemt">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration8.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration9.jpg" alt="boho" class="imgGemt">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration2.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration4.jpg" alt="boho" class="imgGemt">
+      </div>
+
+      <div class="inspi_flex">
+        <img src="images/logoOgIkoner/inspiration/inspiration6.jpg" alt="boho" class="imgGemt">
+        <img src="images/logoOgIkoner/inspiration/inspiration8.jpg" alt="boho" class="imgGemt">
+      </div>
+    </div>
+
+  </section>
+
+  <!-- shuffle page -->
+  <section id="shuffle" class="page">
+    <h2 class="page_header">Shuffle</h2>
+    <div class="toolsbar">
+      <div class="tools_container">
+        <select id="select-season" onchange="seasonSelected(this.value)">
+          <optgroup>
+            <option selected>Sæson</option>
+            <option>Sommer</option>
+            <option>Forår</option>
+            <option>Efterår</option>
+            <option>Vinter</option>
+          </optgroup>
+        </select>
+        <select id="select-style" onchange="styleSelected(this.value)">
+          <optgroup>
+            <option selected>Stiltype</option>
+            <option>Boho</option>
+            <option>Casual</option>
+            <option>Chic</option>
+            <option>Classic</option>
+            <option>Formel</option>
+            <option>Grunge</option>
+            <option>Hipster</option>
+            <option>Loungewear</option>
+            <option>Sporty</option>
+            <option>Streetstyle</option>
+            <option>Party</option>
+            <option>Punk</option>
+            <option>Vintage</option>
+            <option>Workwear</option>
+          </optgroup>
+        </select>
+        <select id="select-color" onchange="colorSelected(this.value)">
+          <option selected disabled>Farve</option>
+          <option>beige</option>
+          <option>black</option>
+          <option>red</option>
+        </select>
+      </div>
+      <div class="gemFunktion" href=""><img class="heart_icon" src="/images/logoOgIkoner/nyIkon/heart.svg"></div>
+    </div>
+
+  </section>
+
+  <!-- skab page -->
+  <section id="skab" class="page">
+    <div class="toolsbar">
+      <div class="tools_container">
+        <select id="select-season" onchange="categorySelected(this.value)">
+          <optgroup>
+            <option selected>Sæson</option>
+            <option>Sommer</option>
+            <option>Forår</option>
+            <option>Efterår</option>
+            <option>Vinter</option>
+          </optgroup>
+        </select>
+        <select id="select-style" onchange="categorySelected(this.value)">
+          <optgroup>
+            <option selected>Stiltype</option>
+            <option>Boho</option>
+            <option>Casual</option>
+            <option>Chic</option>
+            <option>Classic</option>
+            <option>Formel</option>
+            <option>Grunge</option>
+            <option>Hipster</option>
+            <option>Loungewear</option>
+            <option>Sporty</option>
+            <option>Streetstyle</option>
+            <option>Party</option>
+            <option>Punk</option>
+            <option>Vintage</option>
+            <option>Workwear</option>
+          </optgroup>
+        </select>
+        <select id="select-color" onchange="categorySelected(this.value)">
+          <option selected disabled>Farve</option>
+        </select>
+      </div>
+      <div class="search_container"><img class="search_icon" src="\images\logoOgIkoner\nyIkon\lup.svg"><input
+          id="input_search" type="search" placeholder="Søg" onkeyup="search(this.value)" onsearch="search(this.value)">
+      </div>
+    </div>
+    <div id="grid-clothes" class="grid-container">
+    </div>
+  </section>
+
+  <!-- detail page -->
+  <section id="detailView" class="page">
+    <a href="#skab" class="back_button"><img src="\images\logoOgIkoner\nyIkon\back.svg" alt="Tilbage"
+        class="back_button_img"></a>
+    <section id="detailViewContainer" class="detail-grid"></section>
+    <div class="detailTools">
+      <button onclick="navigateTo('redigerToej')"><img src="\images\logoOgIkoner\nyIkon\edit.svg"
+          alt="Rediger"></button>
+      <button onclick="deleteClothes(name)"><img src="\images\logoOgIkoner\nyIkon\delete.svg" alt="Slet"></button>
+      <!-- <a href="#edit" class="edit_button"><img src="\images\logoOgIkoner\nyIkon\edit.svg" alt="Rediger"></a>
+      <a href="#delete" class="delete_button" onclick="deleteClothes(name)"><img src="\images\logoOgIkoner\nyIkon\delete.svg" alt="Slet"></a> -->
+    </div>
+  </section>
+
+  <!-- Delete clothes -->
+  <!-- <section id="delete" class="deletePopUp">
+    <div class="confirmDeletion">
+      <p>Ønsker du at slette dette stykke tøj?</p>
+      <img src="images\logoOgIkoner\nyIkon\delete.svg">
+      <div class="deleteOptions">
+        <button class="deleteConfirmation_button" onclick="deleteClothes()">Ja</button>
+        <button class="deleteConfirmation_button" onclick="navigateTo('skab')">Nej</button>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- add clothes page -->
+  <section id="add" class="page">
+    <a href="#skab" class="back_button"><img src="\images\logoOgIkoner\nyIkon\back.svg" alt="Tilbage"
+        class="back_button_img"></a>
+    <h2 class="page_header">Opret tøj</h2>
+    <form id="addNewClothes">
+      <label for="img">Upload billede af tøj:</label>
+      <input type="file" id="addImg" name="img" accept="image/*" class="tekstfelt" required
+        onchange="previewImage(this.files[0], 'imagePreview')">
+      <img id="imagePreview" class="image-preview">
+
+      <input type="text" id="addName" placeholder="Giv dit tøj et navn" class="tekstfelt" required>
+
+      <h3 class="valg">Vælg sæsoner</h3>
+      <div class="seasonFlex" id="seasonTyperCheck">
+        <div class="season_section">
+          <input type="checkbox" name="summer" id="summer" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/summer.svg" class="season_img" alt="stiltype">
+          <label for="summer" class="season1">Sommer</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="fall" id="fall" class="styleInput"><img src="images/logoOgIkoner/nyIkon/fall.svg"
+            class="season_img" alt="stiltype">
+          <label for="fall" class="season2">Efterår</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="winter" id="winter" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/winter.svg" class="season_img" alt="stiltype">
+          <label for="winter" class="season3">Vinter</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="spring" id="spring" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/spring.svg" class="season_img" alt="stiltype">
+          <label for="spring" class="season4">Forår</label><br>
+        </div>
+      </div>
+
+
+      <label for="season" class="valg">Vælg farver</label>
+      <div class="farveFlex">
+        <input type="checkbox" name="orange" id="orange" class="farveInput">
+        <label for="orange" class="farve1">hej</label>
+
+        <input type="checkbox" name="yellow" id="yellow" class="farveInput">
+        <label for="yellow" class="farve2">hej</label>
+
+        <input type="checkbox" name="green" id="green" class="farveInput">
+        <label for="green" class="farve3">hej</label>
+
+        <input type="checkbox" name="blue" id="blue" class="farveInput">
+        <label for="blue" class="farve4">hej</label>
+
+        <input type="checkbox" name="farve" id="farve5" class="farveInput">
+        <label for="farve5" class="farve5">hej</label>
+
+        <input type="checkbox" name="farve" id="farve6" class="farveInput">
+        <label for="farve6" class="farve6">hej</label>
+
+        <input type="checkbox" name="farve" id="farve7" class="farveInput">
+        <label for="farve7" class="farve7">hej</label>
+
+        <input type="checkbox" name="farve" id="farve8" class="farveInput">
+        <label for="farve8" class="farve8">hej</label>
+
+        <input type="checkbox" name="farve" id="farve9" class="farveInput">
+        <label for="farve9" class="farve9">hej</label>
+
+        <input type="checkbox" name="farve" id="farve10" class="farveInput">
+        <label for="farve10" class="farve10">hej</label>
+
+        <input type="checkbox" name="farve" id="farve11" class="farveInput">
+        <label for="farve11" class="farve11">hej</label>
+
+        <input type="checkbox" name="farve" id="farve12" class="farveInput">
+        <label for="farve12" class="farve12">hej</label>
+
+
+      </div>
+
+
+      <h3 class="valg">Vælg stiltyper</h3>
+      <div class="stilFlex" id="stilTyperCheck">
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style1xx" class="styleInput"> <img src="images/chic.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style1xx" class="stiltekst">Chic</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style2" class="styleInput"><img src="images/classic.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style2" class="stiltekst">Klassisk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style3" class="styleInput"><img src="images/casual.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style3" class="stiltekst">Casual</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style4" class="styleInput"><img src="images/formal.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style4" class="stiltekst">Formel</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style5" class="styleInput"><img src="images/grunge.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style5" class="stiltekst">Grunge</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style6" class="styleInput"><img src="images/streetstyle.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style6" class="stiltekst">Streetstyle</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style7" class="styleInput"><img src="images/party.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style7" class="stiltekst">Party</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style8" class="styleInput"><img src="images/punk.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style8" class="stiltekst">Punk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style9" class="styleInput"><img src="images/sporty.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style9" class="stiltekst">Sporty</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style10" class="styleInput"><img src="images/loungewear.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style10" class="stiltekst">Loungewear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style11" class="styleInput"><img src="images/boho.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style11" class="stiltekst">Boho</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style12" class="styleInput"><img src="images/hipster.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style12" class="stiltekst">Hipster</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style13" class="styleInput"><img src="images/workwear.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style13" class="stiltekst">Workwear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style14" class="styleInput"><img src="images/vintage.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style14" class="stiltekst">Vintage</label><br>
+        </div>
+      </div>
+
+
+      <label for="valg" class="valg">Vælg kategori</label>
+      <div class="categoryFlex">
+        <div>
+          <input type="checkbox" name="farve" id="category1" class="categoryInput">
+          <label for="category1" class="category1">Outerwear</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category2" class="categoryInput">
+          <label for="category2" class="category2">Overdel</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category3" class="categoryInput">
+          <label for="category3" class="category3">Full body</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category4" class="categoryInput">
+          <label for="category4" class="category4">Underdel</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category5" class="categoryInput">
+          <label for="category5" class="category5">Sko</label>
+        </div>
+      </div>
+    </form>
+
+    <a href="#skab" rel="link" class="add_link"><button class="submit_link" type="button" name="button"
+        onclick="createToej()">Føj til
+        skab</button></a>
+  </section>
+
+  <!--Rediger tøj -->
+  <!-- <section id="redigerToej" class="page">
+    <a href="#skab" class="back_button"><img src="\images\logoOgIkoner\nyIkon\back.svg" alt="Tilbage"
+        class="back_button_img"></a>
+    <h2 class="page_header">Rediger tøj</h2>
+    <form id="addNewClothes">
+      <label for="img">Upload billede af tøj:</label>
+      <input type="file" id="addImg" name="img" accept="image/*" class="tekstfelt" required>
+      <input type="text" id="addName" placeholder="Giv dit tøj et navn" class="tekstfelt" required>
+
+      <h3 class="valg">Vælg sæsoner</h3>
+      <div class="seasonFlex" id="seasonTyperCheck">
+        <div class="season_section">
+          <input type="checkbox" name="style" id="season1" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/summer.svg" class="season_img" alt="stiltype">
+          <label for="style1" class="season1">Sommer</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="style" id="season2" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/fall.svg" class="season_img" alt="stiltype">
+          <label for="style2" class="season2">Efterår</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="style" id="season3" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/winter.svg" class="season_img" alt="stiltype">
+          <label for="style3" class="season3">Vinter</label><br>
+        </div>
+        <div class="season_section">
+          <input type="checkbox" name="style" id="season4" class="styleInput"><img
+            src="images/logoOgIkoner/nyIkon/spring.svg" class="season_img" alt="stiltype">
+          <label for="style4" class="season4">Forår</label><br>
+        </div>
+      </div>
+
+
+      <label for="season" class="valg">Vælg farver</label>
+      <div class="farveFlex">
+        <input type="checkbox" name="farve" id="farve1" class="farveInput">
+        <label for="farve1" class="farve1">hej</label>
+
+        <input type="checkbox" name="farve" id="farve2" class="farveInput">
+        <label for="farve2" class="farve2">hej</label>
+
+        <input type="checkbox" name="farve" id="farve3" class="farveInput">
+        <label for="farve3" class="farve3">hej</label>
+
+        <input type="checkbox" name="farve" id="farve4" class="farveInput">
+        <label for="farve4" class="farve4">hej</label>
+
+        <input type="checkbox" name="farve" id="farve5" class="farveInput">
+        <label for="farve5" class="farve5">hej</label>
+
+        <input type="checkbox" name="farve" id="farve6" class="farveInput">
+        <label for="farve6" class="farve6">hej</label>
+
+        <input type="checkbox" name="farve" id="farve7" class="farveInput">
+        <label for="farve7" class="farve7">hej</label>
+
+        <input type="checkbox" name="farve" id="farve8" class="farveInput">
+        <label for="farve8" class="farve8">hej</label>
+
+        <input type="checkbox" name="farve" id="farve9" class="farveInput">
+        <label for="farve9" class="farve9">hej</label>
+
+        <input type="checkbox" name="farve" id="farve10" class="farveInput">
+        <label for="farve10" class="farve10">hej</label>
+
+        <input type="checkbox" name="farve" id="farve11" class="farveInput">
+        <label for="farve11" class="farve11">hej</label>
+
+        <input type="checkbox" name="farve" id="farve12" class="farveInput">
+        <label for="farve12" class="farve12">hej</label>
+
+
+      </div>
+
+
+      <h3 class="valg">Vælg stiltyper</h3>
+      <div class="stilFlex" id="stilTyperCheck">
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style1" class="styleInput"> <img src="images/chic.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style1" class="stiltekst">Chic</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style2" class="styleInput"><img src="images/classic.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style2" class="stiltekst">Klassisk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style3" class="styleInput"><img src="images/casual.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style3" class="stiltekst">Casual</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style4" class="styleInput"><img src="images/formal.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style4" class="stiltekst">Formel</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style5" class="styleInput"><img src="images/grunge.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style5" class="stiltekst">Grunge</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style6" class="styleInput"><img src="images/streetstyle.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style6" class="stiltekst">Streetstyle</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style7" class="styleInput"><img src="images/party.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style7" class="stiltekst">Party</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style8" class="styleInput"><img src="images/punk.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style8" class="stiltekst">Punk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style9" class="styleInput"><img src="images/sporty.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style9" class="stiltekst">Sporty</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style10" class="styleInput"><img src="images/loungewear.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style10" class="stiltekst">Loungewear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style11" class="styleInput"><img src="images/boho.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style11" class="stiltekst">Boho</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style12" class="styleInput"><img src="images/hipster.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style12" class="stiltekst">Hipster</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style13" class="styleInput"><img src="images/workwear.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style13" class="stiltekst">Workwear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style14" class="styleInput"><img src="images/vintage.jpg"
+            class="stiltype_img" alt="stiltype">
+          <label for="style14" class="stiltekst">Vintage</label><br>
+        </div>
+      </div>
+
+
+      <label for="valg" class="valg">Vælg kategori</label>
+      <div class="categoryFlex">
+        <div>
+          <input type="checkbox" name="farve" id="category1" class="categoryInput">
+          <label for="category1" class="category1">Outerwear</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category2" class="categoryInput">
+          <label for="category2" class="category2">Overdel</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category3" class="categoryInput">
+          <label for="category3" class="category3">Full body</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category4" class="categoryInput">
+          <label for="category4" class="category4">Underdel</label>
+        </div>
+        <div>
+          <input type="checkbox" name="farve" id="category5" class="categoryInput">
+          <label for="category5" class="category5">Sko</label>
+        </div>
+      </div>
+    </form>
+
+    <a href="#skab" rel="link" class="add_link"><button class="submit_link" type="button" name="button"
+        onclick="createToej()">Tilføj rettelser</button></a>
+  </section> -->
+
+  <!-- Rediger profil -->
+  <section class="page" id="retProfil">
+    <a href="#" class="back_button"><img src="\images\logoOgIkoner\nyIkon\back.svg" alt="Tilbage"
+        class="back_button_img"></a>
+    <h2 class="opret_header">Ret oplysninger</h2>
+    <form id="opretId">
+
+      <input type="text" id="brugerNavn" name="brugernavn" class="tekstfelt" placeholder="Brugernavn">
+      <h3 class="valg">Vælg stiltyper</h3>
+      <div class="stilFlex" id="stilTyperCheck">
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style1" class="styleInput"> <img src="images/chic.jpg"
+            class="stiltype_img" alt="Chic">
+          <label for="style1" class="stiltekst">Chic</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style2" class="styleInput"><img src="images/classic.jpg"
+            class="stiltype_img" alt="Klassisk">
+          <label for="style2" class="stiltekst">Klassisk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style3" class="styleInput"><img src="images/casual.jpg"
+            class="stiltype_img" alt="Casual">
+          <label for="style3" class="stiltekst">Casual</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style4" class="styleInput"><img src="images/formal.jpg"
+            class="stiltype_img" alt="Formel">
+          <label for="style4" class="stiltekst">Formel</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style5" class="styleInput"><img src="images/grunge.jpg"
+            class="stiltype_img" alt="Grunge">
+          <label for="style5" class="stiltekst">Grunge</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style6" class="styleInput"><img src="images/streetstyle.jpg"
+            class="stiltype_img" alt="Streetstyle">
+          <label for="style6" class="stiltekst">Streetstyle</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style7" class="styleInput"><img src="images/party.jpg"
+            class="stiltype_img" alt="Party">
+          <label for="style7" class="stiltekst">Party</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style8" class="styleInput"><img src="images/punk.jpg"
+            class="stiltype_img" alt="Punk">
+          <label for="style8" class="stiltekst">Punk</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style9" class="styleInput"><img src="images/sporty.jpg"
+            class="stiltype_img" alt="Sporty">
+          <label for="style9" class="stiltekst">Sporty</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style10" class="styleInput"><img src="images/loungewear.jpg"
+            class="stiltype_img" alt="Loungewear">
+          <label for="style10" class="stiltekst">Loungewear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style11" class="styleInput"><img src="images/boho.jpg"
+            class="stiltype_img" alt="Boho">
+          <label for="style11" class="stiltekst">Boho</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style12" class="styleInput"><img src="images/hipster.jpg"
+            class="stiltype_img" alt="Hipster">
+          <label for="style12" class="stiltekst">Hipster</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style13" class="styleInput"><img src="images/workwear.jpg"
+            class="stiltype_img" alt="Workwear">
+          <label for="style13" class="stiltekst">Workwear</label><br>
+        </div>
+        <div class="stil_section">
+          <input type="checkbox" name="style" id="style14" class="styleInput"><img src="images/vintage.jpg"
+            class="stiltype_img" alt="Vintage">
+          <label for="style14" class="stiltekst">Vintage</label><br>
+        </div>
+      </div>
+      <input type="text" id="mail" name="tekst" placeholder="E-mail" class="tekstfeltTo"><br>
+      <input type="text" id="kode" name="tekst" placeholder="Kodeord" class="tekstfeltTo"><br>
+      <input type="text" id="GentagKode" name="tekst" placeholder="Gentag kodeord" class="tekstfeltTo"><br>
+      <!--indtast fødselsdag-->
+      <div class="samtykke_felter">
+        <input type="checkbox" name="person" id="persondata" class="check">
+        <label for="persondata" class="lable_tekst">Noget med persondata</label><br>
+        <input type="checkbox" name="samtykke" id="samtykke" class="check">
+        <label for="samtykke" class="lable_tekst">Du giver hermed samtykke til, at dine outfits må vises på Taits
+          inspirationsfeed og
+          Instagram.</label>
+      </div>
+      <a href="#slutGuide" name="submit" rel="opret" class="submit_link">Opret profil</a>
+    </form>
+  </section>
+
+  <!-- Om os/Kontakt -->
+  <section class="page" id="omos">
+    <a href="#" class="back_button"><img src="\images\logoOgIkoner\nyIkon\back.svg" alt="Tilbage"
+        class="back_button_img"></a>
+    <div class="omos_section_container">
+      <h2 class="page_header">Hvem er <img src="images\logoOgIkoner\tait_blue.svg.png" alt="Tait logo" id="omoslogo">?
+      </h2>
+      <div class="omos_container">
+        <img src="\images\logoOgIkoner\nyIkon\about us.svg" alt="Om os">
+        <p>Tait så dagens lys i 2021, hvor tre studerende på Multimediedesign&shy;uddannelsen på Erhvervsakademi Aarhus
+          ville skabe en platform for hjælp til en mindre stresset hverdag og inspiration til en ny opfattelse af
+          fashion.</p>
+        <img src="\images\logoOgIkoner\nyIkon\goals.svg" alt="Vores mål" id="goals">
+        <p>Målet er at genopdage inspirationen og kreativiteten i fashion og udvide horisonten i forhold til hvordan
+          outfits sammensættes.</p>
+        <img src="\images\logoOgIkoner\nyIkon\goddess.svg" alt="Gudinde">
+        <p>Tait er en variation af navnet for en egyptisk gudinde for vævning, tekstiler og, til en mindre grad,
+          mumificering. "Taytet" oprinder fra et ord, hvis betydning er "beklædningsgenstand".</p>
+        <img src="\images\logoOgIkoner\nyIkon\contact.svg" alt="Kontakt">
+        <address id="kontakt">Tait I/S
+          <br>
+          Ringvej Syd 104
+          <br>
+          8260 Viby J
+          <br>
+          Danmark
+          <br>
+          Tlf: 12062013
+          <br>
+          E-mail: kontakt@tait.dk
+        </address>
+        <div class="some_container">
+          <img src="images/logoOgIkoner/facebook.svg" alt="Facebook">
+          <img src="images/logoOgIkoner/instagram.svg" alt="Instagram">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SCRIPTS -->
+
+  <!-- SPA functionality  -->
+  <script src="js/spa.js"></script>
+
+  <!-- Main functionality -->
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>

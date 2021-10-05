@@ -1,0 +1,663 @@
+/* CSS reset */
+*,
+:after,
+:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Darker Grotesque", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: 1.2px;
+  color: #6c91a0;
+  /* margin-left: 10px;
+    margin-right: 10px; --- KOMMENTERET UD FOR AT FJERNE HVIDE STREGER I SIDEN*/
+  /* background: rgb(232,203,154);
+    background: linear-gradient(180deg, rgb(234, 223, 206) 0%, rgb(201, 219, 228) 50%, rgba(108,145,160,1) 100%);
+    background-repeat: no-repeat;*/
+}
+
+/* .active {
+                AKTIVER HVILKEN PAGE MAN ER PÅ
+} */
+
+/* Navigation styling */
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 80px;
+  position: relative;
+  z-index: 9999;
+  top: 0;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+.logo {
+  width: 65px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.profil {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-top: 20px;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+.nav_ikon {
+  width: 40px;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+.nav_ikon_shuffle {
+  width: 70px;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+}
+
+.tabbar {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top: 1px solid #6c91a0;
+  justify-content: space-between;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: white;
+}
+
+/* profil menu */
+.navigation_container {
+  padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  z-index: 9999;
+}
+
+.menuitem {
+  display: block;
+  width: 100%;
+  text-align: end;
+  color: #6c91a0;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.menuitems__container {
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  top: 80px;
+  background-color: #ffffff;
+}
+
+.mobileicon {
+  display: none;
+}
+
+.navigation_container input:checked ~ .menuitems__container {
+  display: block;
+  border: 1px solid #6c91a0;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  border-radius: 10px;
+  padding: 20px;
+}
+
+/* PAGES */
+
+.page {
+  display: block;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  animation: fadeIn 0.4s;
+}
+
+.back_button {
+  margin: 20px;
+}
+
+.back_button_img {
+  width: 15px;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* ---------- animations ---------- */
+/* fade in */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* ------------ Forside page -----------*/
+.forside_header {
+  display: block;
+  font-size: 3rem;
+  text-align: center;
+}
+
+/* ------------ Inspiration page -----------*/
+
+.inspirationHeader {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.inspiTopImg {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.page_headerTo {
+  text-align: center;
+  font-size: 1.7rem;
+  margin-bottom: 10px;
+}
+
+.inspiration_div {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+.inspi_flex {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imgGroupOne {
+  width: 130px;
+  height: 130px;
+  margin: 20px;
+  border: 1px solid #6c91a0;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  border-radius: 15px;
+}
+
+.imgGroupTwo {
+  width: 160px;
+  height: 160px;
+  margin: 10px;
+  border: 1px solid #6c91a0;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  border-radius: 15px;
+}
+
+/* ------------ Gemte outfits page -----------*/
+.gemt_header {
+  font-size: 1.7rem;
+  text-align: center;
+}
+.imgGemt {
+  width: 150px;
+  border: 1px solid #6c91a0;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
+  border-radius: 20px;
+  margin: 10px;
+}
+
+/* ------------ Shuffle outfits page -----------*/
+
+/* ------------ Mit klædeskab page -----------*/
+
+.toolsbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 40px);
+  margin: 0 auto;
+}
+
+.tools_container {
+  flex-direction: column;
+  width: 120px;
+}
+
+.tools_container select {
+  color: #6c91a0;
+}
+
+optgroup {
+  font-size: 0.8rem;
+}
+
+.search_container {
+  border: 1px solid #6c91a0;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+  box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+}
+
+.search_icon {
+  width: 30px;
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid #6c91a0;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(108, 145, 160, 0.4));
+  filter: drop-shadow(2px 2px 1px rgba(108, 145, 160, 0.4));
+}
+
+#input_search {
+  width: 40px;
+  -webkit-transition: width 0.35s ease-in-out;
+  transition: width 0.35s ease-in-out;
+}
+
+#input_search:focus {
+  width: 70px;
+}
+
+/* Grid styling */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  width: calc(100vw - 40px);
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-bottom: 100px;
+}
+
+.grid-container > article {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-container > article img {
+  width: 100px;
+  border: 1px solid #6c91a0;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+  box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+}
+
+/* ---------- Detail view page ---------- */
+
+#detailView {
+  width: 100%;
+  border: 1px solid #6c91a0;
+  -webkit-box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+  box-shadow: 2px 2px 10px 1px rgba(108, 145, 160, 0.4);
+  border-radius: 10px;
+  margin: 20px auto 100px;
+  padding-top: 20px;
+}
+
+#detailViewContainer {
+  text-align: center;
+}
+
+#detailViewContainer > article {
+  margin-top: 20px;
+}
+
+#detailViewContainer > article img {
+  width: 100%;
+}
+
+#detailViewContainer > article h2 {
+  margin: 20px auto 20px;
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.2));
+}
+
+.detailTools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 100px);
+  margin: 0 auto;
+}
+
+.detailTools button {
+  font-size: 2rem;
+  padding: 10px;
+  background-color: white;
+}
+
+.detailTools button img {
+  width: 40px;
+  -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2));
+}
+
+/* Delete pop up */
+/* .deletePopUp {
+    display: none;
+}
+
+.showDeletePopUp {
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); 
+    z-index: 9999;
+}
+
+.confirmDeletion {
+    display: block;
+    margin: 160px auto;
+    width: calc(100vw - 50px);
+    padding: 30px 40px;
+    background-color: white;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border: 1px solid #6c91a0;
+    border-radius: 10px;
+}
+
+.confirmDeletion img {
+    width: 60px;
+    margin: 30px auto;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .2));
+}
+
+.deleteConfirmation_button {
+    width: 90px;
+    text-decoration: none;
+    font-size: 2rem;
+    border: 1px solid #6c91a0;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px rgba(108, 145, 160, 0.3);
+}
+
+.deleteOptions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 220px;
+    margin: 0 auto;
+} */
+
+/* ------------ Opret tøj page -----------*/
+#add {
+  padding-bottom: 200px;
+}
+
+#addNewClothes {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.season_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.seasonFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: calc(100vw - 75px);
+  margin: 0 auto;
+}
+
+.season_img {
+  width: 40px;
+}
+
+.season1 {
+  font-size: 0.9rem;
+}
+.season2 {
+  font-size: 0.9rem;
+}
+.season3 {
+  font-size: 0.9rem;
+}
+.season4 {
+  font-size: 0.9rem;
+}
+
+.valg {
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+/* -- styling af farve bobler -- */
+
+.farveFlex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: calc(100vw - 45px);
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+/* .farveInput {
+  display: none;
+} */
+
+.farve1 {
+  background-color: rgb(243, 91, 68, 0.5);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #f35b44;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve1 {
+  display: block;
+  background-color: rgb(243, 91, 68, 1);
+}
+
+.farve2 {
+  background-color: rgb(243, 243, 56, 0.5);
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #f3f338;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve2 {
+  display: block;
+  background-color: rgb(243, 243, 56, 1);
+}
+
+.farve3 {
+  background-color: #77a06c;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #77a06c;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve3 {
+  display: block;
+}
+
+.farve4 {
+  background-color: #6484ea;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #6484ea;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve4 {
+  display: block;
+}
+
+.farve5 {
+  background-color: #333333;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #333333;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve5 {
+  display: block;
+}
+
+.farve6 {
+  background-color: whitesmoke;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: whitesmoke;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve6 {
+  display: block;
+}
+
+.farve7 {
+  background-color: #ffb4ea;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #ffb4ea;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve7 {
+  display: block;
+}
+
+.farve8 {
+  background-color: #a07266;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #a07266;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve8 {
+  display: block;
+}
+
+.farve9 {
+  background-color: #f3ae38;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #f3ae38;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve9 {
+  display: block;
+}
+
+.farve10 {
+  background-color: #b151cc;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #b151cc;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve10 {
+  display: block;
+}
+
+.farve11 {
+  background-color: #e9c1a7;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: #e9c1a7;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve8 {
+  display: block;
+}
+
+.farve12 {
+  background-color: darkgrey;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 15px;
+  color: darkgray;
+  box-shadow: 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#add input:checked ~ .farve12 {
+  display: block;
+}
+
+.categoryFlex {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stilFlex input:checked ~ .stiltype_img {
+  display: block;
+  border: 6px solid #6c91a0;
+}
+
+.add_link {
+  text-decoration: none;
+}

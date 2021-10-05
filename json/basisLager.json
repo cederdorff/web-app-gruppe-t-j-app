@@ -1,0 +1,982 @@
+[
+    {
+        "name": "blazer 1",
+        "img": "images/basisLager/blazer.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "black",
+            "style": "workwear, formal"
+        }
+    },
+    {
+        "name": "blazer 2",
+        "img": "images/basisLager/blazer2.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "beige",
+            "style": "workwear, formal"
+        }
+    },
+    {
+        "name": "blazer 3",
+        "img": "images/basisLager/blazer3.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "blue",
+            "style": "workwear, formal"
+        }
+    },
+    {
+        "name": "blazer 4",
+        "img": "images/basisLager/blazer4.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "black",
+            "style": "workwear, formal"
+        }
+    },
+    {
+        "name": "cardigan 1",
+        "img": "images/basisLager/cardigan1.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 2",
+        "img": "images/basisLager/cardigan2.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 3",
+        "img": "images/basisLager/cardigan3.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 4",
+        "img": "images/basisLager/cardigan4.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 5",
+        "img": "images/basisLager/cardigan5.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 6",
+        "img": "images/basisLager/cardigan6.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "brown",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 7",
+        "img": "images/basisLager/cardigan7.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "gray",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 8",
+        "img": "images/basisLager/cardigan8.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "gray",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 9",
+        "img": "images/basisLager/cardigan9.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 10",
+        "img": "images/basisLager/cardigan9.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 11",
+        "img": "images/basisLager/cardigan11.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 12",
+        "img": "images/basisLager/cardigan12.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "cardigan 13",
+        "img": "images/basisLager/cardigan13.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "blue",
+            "style": "chic, classic, casual, grunge, loungewear"
+        }
+    },
+    {
+        "name": "beige skjorte mand",
+        "img": "images/basisLager/beigeskjorte_mand.jpg",
+        "category": "jacket",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "formal, workwear, classic"
+        }
+    },
+    {
+        "name": "bikerjakke mand",
+        "img": "images/basisLager/bikerjakke_mand.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "punk, grunge, casual"
+        }
+    },
+    {
+        "name": "blaabukser mand",
+        "img": "images/basisLager/blaabukser_mand.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "blue",
+            "style": "casual, streetstyle, sporty, loungewear, chic"
+        }
+    },
+    {
+        "name": "blaaskjorte kvinde",
+        "img": "images/basisLager/blaaskjorte_kvinde.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "blue",
+            "style": "formal, workwear, classic, chic"
+        }
+    },
+    {
+        "name": "blaaskjorte mand",
+        "img": "images/basisLager/blaaskjorte_mand.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "blue",
+            "style": "formal, workwear, classic, chic"
+        }
+    },
+    {
+        "name": "bomberjakke kvinde",
+        "img": "images/basisLager/bomberjakke_kvinde.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "spring, winter, fall, summer",
+            "color": "black",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "bomberjakke kvinde 1",
+        "img": "images/basisLager/bomberjakke_kvinde1.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "green",
+            "style": "casual, streetstyle"
+        }
+    },
+    {
+        "name": "bomberjakke kvinde 2",
+        "img": "images/basisLager/bomberjakke_kvinde2.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "blue",
+            "style": "casual, streetstyle"
+        }
+    },
+    {
+        "name": "bomberjakke mand",
+        "img": "images/basisLager/bomberjakke_mand.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "black",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "brunebukser kvinde",
+        "img": "images/basisLager/brunebukser_kvinde.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, fall, winter, spring",
+            "color": "brown",
+            "style": "chic, classic, formal, casual,"
+        }
+    },
+    {
+        "name": "brunebukser mand",
+        "img": "images/basisLager/brunebukser_mand.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "spring, fall, winter, summer",
+            "color": "brown",
+            "style": "chic, classic, casual, formal, workwear, hipster"
+        }
+    },
+    {
+        "name": "brunebukser kvinde 1",
+        "img": "images/basisLager/brunebukser1_kvinde.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "spring, fall, winter, summer",
+            "color": "brown",
+            "style": "chic, classic, casual, formal, workwear, hipster"
+        }
+    },
+    {
+        "name": "brunskjorte mand",
+        "img": "images/basisLager/brunskjorte_mand.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "brown",
+            "style": "formal, workwear, classic, chic"
+        }
+    },
+    {
+        "name": "croptop kvinde",
+        "img": "images/basisLager/croptop_kvinde.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "white",
+            "style": "chic, casual, formal, classic, party"
+        }
+    },
+    {
+        "name": "croptop kvinde 1",
+        "img": "images/basisLager/croptop_kvinde1.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "black",
+            "style": "chic, casual, party, "
+        }
+    },
+    {
+        "name": "dunjakke kvinde",
+        "img": "images/basisLager/dunjakke_kvinde.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, fall, spring",
+            "color": "black",
+            "style": "streetstyle, sporty, casual"
+        }
+    },
+    {
+        "name": "dunjakke kvinde 1",
+        "img": "images/basisLager/dunjakke_kvinde1.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, fall, spring",
+            "color": "white",
+            "style": "streetstyle, sporty, casual"
+        }
+    },
+    {
+        "name": "dunjakke kvinde 2",
+        "img": "images/basisLager/dunjakke_kvinde2.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, spring, fall",
+            "color": "black",
+            "style": "streetstyle, sporty, casual"
+        }
+    },
+    {
+        "name": "dunjakke kvinde 3",
+        "img": "images/basisLager/dunjakke_kvinde3.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, spring, fall",
+            "color": "brown",
+            "style": "streetstyle, sporty, casual"
+        }
+    },
+    {
+        "name": "dunjakke mand",
+        "img": "images/basisLager/dunjakke_mand.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, spring, fall",
+            "color": "green",
+            "style": "streetstyle, sporty, casual"
+        }
+    },
+    {
+        "name": "frakkejakke mand",
+        "img": "images/basisLager/frakkejakke_mand.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, fall, spring",
+            "color": "brown",
+            "style": "formal, chic, classic, workwear, hipster"
+        }
+    },
+    {
+        "name": "frakkejakke mand 1",
+        "img": "images/basisLager/frakkejakke_mand1.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "winter, fall, spring",
+            "color": "black",
+            "style": "formal, chic, classic, workwear, hipster"
+        }
+    },
+    {
+        "name": "graabukser kvinde",
+        "img": "images/basisLager/graabukser_kvinde.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "winter, spring, summer, fall",
+            "color": "gray",
+            "style": "chic, classic, casual, formal, workwear"
+        }
+    },
+    {
+        "name": "habitbuks 1",
+        "img": "images/basisLager/habitbuks1.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, formal, party, hipster, vintage, workwear"
+        }
+    },
+    {
+        "name": "habitbuks 2",
+        "img": "images/basisLager/habitbuks2.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "white",
+            "style": "chic, classic, casual, formal, party, hipster, vintage, workwear"
+        }
+    },
+    {
+        "name": "habitbuks 3",
+        "img": "images/basisLager/habitbuks3.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "blue",
+            "style": "chic, classic, casual, formal, party, hipster, vintage, workwear"
+        }
+    },
+    {
+        "name": "habitbukser 4",
+        "img": "images/basisLager/habitbuks4.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "gray",
+            "style": "chic, classic, casual, formal, party, hipster, vintage, workwear"
+        }
+    },
+    {
+        "name": "haettetroje",
+        "img": "images/basisLager/haettetoje.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "gray",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetroje 1",
+        "img": "images/basisLager/haettetoje1.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "gray",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetroje 2",
+        "img": "images/basisLager/haettetoje2.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "blue",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetroje 3",
+        "img": "images/basisLager/haettetoje3.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "blue",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetroje 4",
+        "img": "images/basisLager/haettetoje4.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "black",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetrøje 5",
+        "img": "images/basisLager/haettetoje5.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "black",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "haettetrøje 6",
+        "img": "images/basisLager/haettetoje6.jpg",
+        "category": "outerwear, overdel",
+        "keywords": {
+            "season": "fall, spring, winter",
+            "color": "white",
+            "style": "casual, streetstyle, sporty, loungewear"
+        }
+    },
+    {
+        "name": "hvide bukser kvinde",
+        "img": "images/basisLager/hvidebukser_kvinde.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "white",
+            "style": "chic, classic, casual, formal, workwear"
+        }
+    },
+    {
+        "name": "hvide bukser mand",
+        "img": "images/basisLager/hvidebukser_mand.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "white, gray",
+            "style": "classic, casual"
+        }
+    },
+    {
+        "name": "hvidebukser kvinde 1",
+        "img": "images/basisLager/hvidebukser1_kvinde.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "white",
+            "style": "classic, casual, formal, workwear"
+        }
+    },
+    {
+        "name": "hvid skjorte mand",
+        "img": "images/basisLager/hvidskjorte_mand.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "white",
+            "style": "formal, workwear, classic, chic"
+        }
+    },
+    {
+        "name": "hvidskjorte kvinde",
+        "img": "images/basisLager/hvidskjorte_kvinde.jpg",
+        "category": "overdel",
+        "keywords": {
+            "season": "summer, fall, spring, winter",
+            "color": "white",
+            "style": "formal, workwear, classic, chic"
+        }
+    },
+    {
+        "name": "jeans 1",
+        "img": "images/basisLager/jeans1.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casusal, vintage, hipster"
+        }
+    },
+    {
+        "name": "jeans 2",
+        "img": "images/basisLager/jeans2.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "black",
+            "style": "classic, grunge, casual, chic"
+        }
+    },
+    {
+        "name": "jeans 3",
+        "img": "images/basisLager/jeans3.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casusal, vintage, hipster"
+        }
+    },
+    {
+        "name": "jeans 4",
+        "img": "images/basisLager/jeans4.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, black",
+            "style": "casusal, classic"
+        }
+    },
+    {
+        "name": "jeans 6",
+        "img": "images/basisLager/jeans6.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casual, chic, grunge, classic, hipster"
+        }
+    },
+    {
+        "name": "jeans 5",
+        "img": "images/basisLager/jeans5.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casusal, vintage, hipster"
+        }
+    },
+    {
+        "name": "jeans 7",
+        "img": "images/basisLager/jeans7.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casusal, vintage, hipster, chic, grunge"
+        }
+    },
+    {
+        "name": "jeans 8",
+        "img": "images/basisLager/jeans8.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, blue",
+            "style": "casusal, classic"
+        }
+    },
+    {
+        "name": "jeans 9",
+        "img": "images/basisLager/jeans9.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, winter, fall",
+            "color": "denim, black",
+            "style": "casusal, hipster, streetstyle, sporty, classic"
+        }
+    },
+    {
+        "name": "jeans 10",
+        "img": "images/basisLager/jeans10.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "denim, blue",
+            "style": "casual, chic, grunge, classic, hipster"
+        }
+    },
+    {
+        "name": "jumpsuit",
+        "img": "images/basisLager/jumpsuit.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "spring, fall, winter, summer",
+            "color": "demin, blue",
+            "style": "streetstyle, chic, casual, hipster"
+        }
+    },
+    {
+        "name": "jumpsuit 1",
+        "img": "images/basisLager/jumpsuit1.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "black",
+            "style": "classic, formel"
+        }
+    },
+    {
+        "name": "jumpsuit 2",
+        "img": "images/basisLager/jumpsuit2.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "spring, fall, winter, summer",
+            "color": "demin, blue",
+            "style": "streetstyle, chic, casual, hipster, vintage"
+        }
+    },
+    {
+        "name": "jumpsuit 3",
+        "img": "images/basisLager/jumpsuit3.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "black",
+            "style": "casual, classic, chic"
+        }
+    },
+    {
+        "name": "jumpsuit 4",
+        "img": "images/basisLager/jumpsuit4.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "spring, fall, winter, summer",
+            "color": "gray",
+            "style": "loungewear, casual, chic, classic"
+        }
+    },
+    {
+        "name": "jumpsuit 5",
+        "img": "images/basisLager/jumpsuit5.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "classic, chic, casual, loungewear, hipster"
+        }
+    },
+    {
+        "name": "jumpsuit 6",
+        "img": "images/basisLager/jumpsuit6.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "beige",
+            "style": "classic, chic, casual, workwear, formal"
+        }
+    },
+    {
+        "name": "kortkjole blaa",
+        "img": "images/basisLager/kortkjole_blue.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "blue",
+            "style": "feminine, casual, classic, chic"
+        }
+    },
+    {
+        "name": "kort kjole hvid",
+        "img": "images/basisLager/kortkjole_hvid.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "white, blue",
+            "style": "feminine, casual"
+        }
+    },
+    {
+        "name": "kort kjole pattern",
+        "img": "images/basisLager/kortkjole_pattern.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "blue, green, pink, multi",
+            "style": "boho, casual, feminine, loungewear"
+        }
+    },
+    {
+        "name": "kortkjole sort",
+        "img": "images/basisLager/kortkjole_sort.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, fall, spring",
+            "color": "black",
+            "style": "feminine, casual, classic, chic, formal"
+        }
+    },
+    {
+        "name": "kort nederdel brun",
+        "img": "images/basisLager/kortnederdel_brun.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "spring, summer, fall",
+            "color": "brown",
+            "style": "chic, classic, casual, party, feminine"
+        }
+    },
+    {
+        "name": "kort nederdel denim",
+        "img": "images/basisLager/kortnederdel_denim.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "spring, fall, summer",
+            "color": "denim, blue",
+            "style": "casual, vintage, hipster, feminine"
+        }
+    },
+    {
+        "name": "kort nederdel hvid",
+        "img": "images/basisLager/kortnederdel_hvid.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "white",
+            "style": "chic, classic, casual, formal, feminine"
+        }
+    },
+    {
+        "name": "kort nederdel pattern",
+        "img": "images/basisLager/kortnederdel_pattern.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, fall, spring",
+            "color": "black, red, multi",
+            "style": "feminine, grunge, punk, casual"
+        }
+    },
+    {
+        "name": "kort nederdel sort",
+        "img": "images/basisLager/kortnederdel_sort.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, fall, spring",
+            "color": "black",
+            "style": "feminine, chic, casual, classic, party"
+        }
+    },
+    {
+        "name": "kvinde lange shorts denim",
+        "img": "images/basisLager/kvindelangeshorts_denim.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "denim, blue",
+            "style": "casual, vintage, hipster"
+        }
+    },
+    {
+        "name": "kvinde lange shorts hvid",
+        "img": "images/basisLager/kvindelangeshorts_hvid.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "white",
+            "style": "loungewear, casual, sporty, streetstyle"
+        }
+    },
+    {
+        "name": "kvinde lange shorts pattern",
+        "img": "images/basisLager/kvindelangeshorts_pattern.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "white, green, multi",
+            "style": "casual, loungewear"
+        }
+    },
+    {
+        "name": "kvinde lange shorts pink",
+        "img": "images/basisLager/kvindelangeshorts_pink.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "pink",
+            "style": "chic, classic, casual, formal, hipster, workwear"
+        }
+    },
+    {
+        "name": "kvinde lange shorts sort",
+        "img": "images/basisLager/kvindelangeshorts_sort.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "black",
+            "style": "chic, classic, casual, formal, workwear"
+        }
+    },
+    {
+        "name": "kvinde shorts brun",
+        "img": "images/basisLager/kvindeshorts_brun.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "beige, brown",
+            "style": "casual, loungewear"
+        }
+    },
+    {
+        "name": "kvinde shorts denim",
+        "img": "images/basisLager/kvindeshorts_denim.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "denim, blue",
+            "style": "casual"
+        }
+    },
+    {
+        "name": "kvindeshorts hvid",
+        "img": "images/basisLager/kvindeshorts_hvid.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "white",
+            "style": "casual, loungewear, sporty"
+        }
+    },
+    {
+        "name": "kvindeshorts pattern",
+        "img": "images/basisLager/kvindeshorts_pattern.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "pink, green, multi",
+            "style": "casual, hipster"
+        }
+    },
+    {
+        "name": "kvindeshorts sort",
+        "img": "images/basisLager/kvindeshorts_sort.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, spring, fall",
+            "color": "black",
+            "style": "casual, loungewear"
+        }
+    },
+    {
+        "name": "laederjakke kvinde",
+        "img": "images/basisLager/laederjakke_kvinde.jpg",
+        "category": "outerwear",
+        "keywords": {
+            "season": "summer, fall, spring",
+            "color": "black",
+            "style": "casual, grunge, punk, vintage"
+        }
+    },
+    {
+        "name": "lang kjole hvid",
+        "img": "images/basisLager/langkjole_hvid.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, spring, fall, winter",
+            "color": "white",
+            "style": "feminine, classic, casual, loungewear, vintage"
+        }
+    },
+    {
+        "name": "lang kjole pattern",
+        "img": "images/basisLager/langkjole_pattern.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, fall, spring",
+            "color": "orange, pink, multi",
+            "style": "classic, feminine, casual, boho, vintage"
+        }
+    },
+    {
+        "name": "lang kjole red",
+        "img": "images/basisLager/langkjole_red.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, spring",
+            "color": "red",
+            "style": "casual, feminine, classic"
+        }
+    },
+    {
+        "name": "lang kjole sort",
+        "img": "images/basisLager/langkjole_sort.jpg",
+        "category": "fullbody",
+        "keywords": {
+            "season": "summer, winter, spring, fall",
+            "color": "black",
+            "style": "fiminine, formal, classic, chic"
+        }
+    },
+    {
+        "name": "lang nederdel denim",
+        "img": "images/basisLager/langnederdel_denim.jpg",
+        "category": "underdel",
+        "keywords": {
+            "season": "summer, fall, spring",
+            "color": "denim, blue",
+            "style": "classic, chic, feminine, hipster, grunge"
+        }
+    }
+]

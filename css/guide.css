@@ -1,0 +1,100 @@
+/*------------- Guide slider -----------*/
+#startGuide1 {
+    padding-bottom: 200px;
+}
+
+.guide_logo {
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.guide_header {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.start_guide_boks {
+    width: 90%; 
+    border: 1px solid #6c91a0;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.guide_ikon {
+    width: 80px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.p_guide {
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.4rem;
+    margin-bottom: 90px;
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start_guide_knap {
+    background-color: #eadfce;
+    text-decoration: none;
+    color: #6c91a0;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 170px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+}
+
+/*------------- Slut guide -------------*/
+.slutGuideBoks {
+    border-radius: 20px;
+    border: 1px solid #6c91a0;
+
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+
+}
+
+.forstaaet {
+    background-color: #eadfce;
+    text-decoration: none;
+    color: #6c91a0;
+    padding: 10px 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 120px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, .3));
+    margin-top: 30px;
+}
